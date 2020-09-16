@@ -27,20 +27,15 @@ console.log(sentence);
 
 // DON’T try and wing this, take a look at todays notes, collaborate with classmates, use the internet to help yourself land on the correct solution, and use office hours to get the solution.
 
-// var fulltext1 = "MAN54681;Manchester Piccadilly"
-
-// var fulltext2 = "GNF6519871681;Greenfield"
-
-// var fulltext3 = "LIV515;Liverpool"
-
-// var fulltext4 = "SYB98981981;Stalybridge"
-
-// var fulltext5 = "HUD517819181;Huddersfield"
-
-// Submit by uploading to GitHub and linking your solution
-
-// MAN54681;Manchester Piccadilly
-// MAN54681, City: Manchester Piccadilly
-
-var repeat = "MAN54681;Manchester Piccadilly"
+ var repeat = "MAN54681;Manchester Piccadilly"
+ console.log(repeat.replace(';',', City: '));
+var repeat = "GNF6519871681;Greenfield"
+console.log(repeat.replace(';',', City: '));
+var repeat= "LIV515;Liverpool"
+console.log(repeat.replace(';',', City: '));
+var repeat= "SYB98981981;Stalybridge"
+console.log(repeat.replace(';',', City: '));
+var repeat = "HUD517819181;Huddersfield"
+console.log(repeat.replace(';',', City: '));
+var repeat = "MAN54681;Manchester Piccadilly" 
 console.log(repeat.replace(';',', City: '));
