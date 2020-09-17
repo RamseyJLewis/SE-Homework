@@ -59,7 +59,7 @@
 // For example 'Nic+Laurie' gets converted into 'Nic, Laurie'.
 
 var names = 'Nic, laurie';
-console.log(names.replace("+",",")); 
+// console.log(names.replace("+",",")); 
 
 // Q2:
 // Write some code that gives us the length of a given string.
@@ -68,7 +68,7 @@ console.log(names.replace("+",","));
 
 var Q2 = 'pocketSquare';
 var Q2A = Q2.length;
-console.log(Q2A)
+// console.log(Q2A)
  
 
 // Q3:
@@ -78,7 +78,7 @@ console.log(Q2A)
 // For example: 'Michelle Obama' converts 'michelle obama'.
 
 var superHero = 'Peter Parker';
-console.log(superHero.toUpperCase());
+// console.log(superHero.toUpperCase());
 
 
  
@@ -90,8 +90,10 @@ console.log(superHero.toUpperCase());
 // The result should be: 'eat'
 
 var phrase = "My home town." ;
-var newPhrase = phrase.slice(3, 7);
-console.log(newPhrase);
+console.log(phrase.replace('home','HOME'))
+
+var phrase2 = "Lets eat, Grandpa!"
+console.log(phrase2.replace('eat','EAT'))
 
 
 // Q5:
@@ -108,7 +110,7 @@ var string = "I'm very happy" //I got stuck on this one.
 
 var color = ['Red', 'Green', 'Yellow', 'Purple']
 var midColor = color [2]
-console.log(midColor);
+// console.log(midColor);
  
 
 // Q7: Write some code that converts the array ['Red', 'Green', 'Yellow', 'Purple'] to ['Green', 'Yellow', 'Blue', 'Purple', 'Pink']
@@ -119,7 +121,7 @@ var color = ['Red', 'Green', 'Yellow', 'Purple'];
 color.shift();
 color.push('pink');
 color.splice(2,0,'blue')
-console.log(color);
+// console.log(color);
 
 
 
