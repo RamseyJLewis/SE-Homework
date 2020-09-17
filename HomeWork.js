@@ -1,4 +1,4 @@
-///////////////////////////////////////////////////////9.16.20/////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////9.16.20/////////////////////////////////////////////////////////////////////////////////////////
 
 //Instructions
 //Create a set of variables for your dream vehicle (number of wheels, number of seats, etc…)
@@ -45,9 +45,7 @@
 
 
 
-
-
-////////////////////////////////////////////////////////////9.17.20/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////9.17.20////////////////////////////////////////////////////////
 // nstructions
 // Homework:
 
@@ -59,7 +57,7 @@
 // For example 'Nic+Laurie' gets converted into 'Nic, Laurie'.
 
 var names = 'Nic, laurie';
-// console.log(names.replace("+",",")); 
+console.log(names.replace("+",",")); 
 
 // Q2:
 // Write some code that gives us the length of a given string.
@@ -68,7 +66,7 @@ var names = 'Nic, laurie';
 
 var Q2 = 'pocketSquare';
 var Q2A = Q2.length;
-// console.log(Q2A)
+console.log(Q2A)
  
 
 // Q3:
@@ -78,7 +76,7 @@ var Q2A = Q2.length;
 // For example: 'Michelle Obama' converts 'michelle obama'.
 
 var superHero = 'Peter Parker';
-// console.log(superHero.toUpperCase());
+console.log(superHero.toUpperCase());
 
 
  
@@ -90,27 +88,30 @@ var superHero = 'Peter Parker';
 // The result should be: 'eat'
 
 var phrase = "My home town." ;
-console.log(phrase.replace('home','HOME'))
+var newPhrase = phrase.slice(3, 7);
+console.log(newPhrase);
 
-var phrase2 = "Lets eat, Grandpa!"
-console.log(phrase2.replace('eat','EAT'))
+var phraseB = "Lets eat, Grandpa!" ;
+var newPhrase = phraseB.slice(5, 7);
+console.log(newPhrase);
+
 
 
 // Q5:
 // Write some code that capitalizes a portion of a given string.
 // For example: "I'm very happy" becomes, "I'm VERY happy!"
 
-var string = "I'm very happy" //I got stuck on this one. 
-// var newString = string.toUpperCase(4,8);???
-//console.log(string.toUpperCase(0, 6));????
- 
+var Q5 = "My home town." ;
+console.log(Q5.replace('home','HOME'))
+
+
 
 // Arrays:
 // Q6: Write some code that retrieves the 3rd item from the array ['Red', 'Green', 'Yellow', 'Purple']
 
 var color = ['Red', 'Green', 'Yellow', 'Purple']
 var midColor = color [2]
-// console.log(midColor);
+console.log(midColor);
  
 
 // Q7: Write some code that converts the array ['Red', 'Green', 'Yellow', 'Purple'] to ['Green', 'Yellow', 'Blue', 'Purple', 'Pink']
@@ -121,7 +122,7 @@ var color = ['Red', 'Green', 'Yellow', 'Purple'];
 color.shift();
 color.push('pink');
 color.splice(2,0,'blue')
-// console.log(color);
+console.log(color);
 
 
 
