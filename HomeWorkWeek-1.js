@@ -57,7 +57,7 @@
 // For example 'Nic+Laurie' gets converted into 'Nic, Laurie'.
 
 var names = 'Nic, laurie';
-console.log(names.replace("+",",")); 
+// console.log(names.replace("+",",")); 
 
 // Q2:
 // Write some code that gives us the length of a given string.
@@ -66,7 +66,7 @@ console.log(names.replace("+",","));
 
 var Q2 = 'pocketSquare';
 var Q2A = Q2.length;
-console.log(Q2A)
+// console.log(Q2A)
  
 
 // Q3:
@@ -76,7 +76,7 @@ console.log(Q2A)
 // For example: 'Michelle Obama' converts 'michelle obama'.
 
 var superHero = 'Peter Parker';
-console.log(superHero.toUpperCase());
+// console.log(superHero.toUpperCase());
 
 
  
@@ -89,11 +89,11 @@ console.log(superHero.toUpperCase());
 
 var phrase = "My home town." ;
 var newPhrase = phrase.slice(3, 7);
-console.log(newPhrase);
+// console.log(newPhrase);
 
 var phraseB = "Lets eat, Grandpa!" ;
 var newPhrase = phraseB.slice(5, 7);
-console.log(newPhrase);
+//console.log(newPhrase);
 
 
 
@@ -102,7 +102,7 @@ console.log(newPhrase);
 // For example: "I'm very happy" becomes, "I'm VERY happy!"
 
 var Q5 = "My home town." ;
-console.log(Q5.replace('home','HOME'))
+// console.log(Q5.replace('home','HOME'))
 
 
 
@@ -111,7 +111,7 @@ console.log(Q5.replace('home','HOME'))
 
 var color = ['Red', 'Green', 'Yellow', 'Purple']
 var midColor = color [2]
-console.log(midColor);
+// console.log(midColor);
  
 
 // Q7: Write some code that converts the array ['Red', 'Green', 'Yellow', 'Purple'] to ['Green', 'Yellow', 'Blue', 'Purple', 'Pink']
@@ -122,7 +122,7 @@ var color = ['Red', 'Green', 'Yellow', 'Purple'];
 color.shift();
 color.push('pink');
 color.splice(2,0,'blue')
-console.log(color);
+// console.log(color);
 
 
 
@@ -130,3 +130,146 @@ console.log(color);
 // My work
 // Points
 // No points
+
+
+//////////////////////////////////////////////////9.18.20//////////////////////////////////////////////////////////////////
+
+
+//Problem 1
+// Using Math.random(), console.log 3 random numbers from 5 to 15
+
+var number = [5,6,7,8,9,10,11,12,13,14,15] 
+
+function prob1() {
+    var index = Math.floor(Math.random() * Math.floor(number.length))
+   var output = number[index];
+    return output;
+  }
+
+  console.log(prob1())
+
+
+// Problem 2
+// Define a variable name and assign your name to it
+// Create a function that returns your name
+
+var name = ['Ramsey'] 
+
+function n (str){
+    return str
+}
+console.log(n(name))
+
+// Problem 3
+// Create a function that accepts 2 arguments, both of which are numbers, and returns the sum of those two numbers
+var num1 = 22
+var num2 = 22
+function add(parameter1, parameter2){
+    return parameter1 + parameter2
+}
+console.log(add(num2,num2))
+
+// Problem 4
+// Create a function that returns the type of any argument that is being called in the function
+// example// type(400) // => 'number'
+// type('hi') // => 'string'
+
+function anyData(num){
+    
+    var output = typeof num;
+        return output
+}
+console.log(anyData(['object']))
+
+
+
+// Problem 5
+// Hint: Ensure you are modifying the parameter and not the original variable inside the function, this will make your life easier with this question
+
+// var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
+// Using the array above, create a funciton that returns the 4th element in the array.
+
+
+var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
+
+function fiveOne(array51){
+    return array51[3]
+
+}
+console.log(fiveOne(fruits))
+
+// Create a function that returns only the last element in the fruits array
+// var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
+var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
+
+function fiveTwo(array52){
+    var AL2 = array52.pop()
+    return array52
+}
+console.log(fiveTwo(fruits))
+
+// Create a function that returns [peach', 'lemon', 'plum', 'grape']
+// ar fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
+var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
+
+function fiveThree(array53){
+    var AL3 = array53.pop()
+    var AL3 = array53.shift()
+    var AL3 = array53.shift()
+    return array53
+}
+console.log(fiveThree(fruits))
+// Create a function that adds another furit to the end of the array and returns the new array
+var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
+
+function fiveFour(array54){
+        var AL4 = array54.unshift('tangerines')
+        return array54
+}
+
+//console.log(fiveFour(fruits))
+// Create a funciton that returns the string, 'apple and orange and peach and lemon and plum and grape and watermelon'
+var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon']
+        function fiveFive(array55){
+            //  AL5 = array5.join( ' and ')
+            return array55
+        }
+       // array55.join( ' and ')
+        //console.log(fiveFive(fruits))
+       
+        // var champions = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
+        // var champsString = champions.join(' and ')
+        //  console.log(champsString);
+
+
+// Problem 6
+
+// var names = ['Wil', 'Shamika', 'Samuel', 'Ramsey']
+
+// Using the array above, create a fucntion that returns the string, 'Hello Wil, happy Friday!'
+var names = ['Wil', 'Shamika', 'Samuel', 'Ramsey']
+        function sixOne (array61){
+           
+            var wil =  array61[0]
+            var Q = 'Hellow ' + wil +' happy Friday!'
+            
+            return Q
+            
+        }
+       console.log(sixOne( names))
+
+
+
+
+    
+
+// Create a function that returns the string, 'Howdy Sam!'
+// Note: Be sure to change 'Samuel' to 'Sam'
+
+// Problem 7
+
+// var nums = [12, 3, 50, 1, 99, 2]
+
+// Using a while loop, create a funciton that adds every number in the nums array and return the total number
+// Note: this one is very challenging and requires a little bit of research, but give it shot!
+// And remember to control - c if you log to the terminal and it is running infinitely!
