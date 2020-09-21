@@ -285,4 +285,4 @@ var sum = nums. reduce(function(a, b){
     return a + b;
     }, 0);
     
-    console. log(sum); // Prints: 15.
+    console. log(sum); 
