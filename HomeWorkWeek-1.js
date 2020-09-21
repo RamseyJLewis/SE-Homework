@@ -28,7 +28,7 @@
 
 // DON’T try and wing this, take a look at todays notes, collaborate with classmates, use the internet to help yourself land on the correct solution, and use office hours to get the solution.
 
-//  var repeat = "MAN54681;Manchester Piccadilly"
+ var repeat = "MAN54681;Manchester Piccadilly"
 //  console.log(repeat.replace(';',', City: '));
 // var repeat = "GNF6519871681;Greenfield"
 // console.log(repeat.replace(';',', City: '));
@@ -57,7 +57,7 @@
 // For example 'Nic+Laurie' gets converted into 'Nic, Laurie'.
 
 var names = 'Nic, laurie';
-// console.log(names.replace("+",",")); 
+console.log(names.replace("+",",")); 
 
 // Q2:
 // Write some code that gives us the length of a given string.
@@ -66,7 +66,7 @@ var names = 'Nic, laurie';
 
 var Q2 = 'pocketSquare';
 var Q2A = Q2.length;
-// console.log(Q2A)
+console.log(Q2A)
  
 
 // Q3:
@@ -92,8 +92,8 @@ var newPhrase = phrase.slice(3, 7);
 // console.log(newPhrase);
 
 var phraseB = "Lets eat, Grandpa!" ;
-var newPhrase = phraseB.slice(5, 7);
-//console.log(newPhrase);
+var newPhrase2 = phraseB.slice(5, 7);
+// console.log(newPhrase2);
 
 
 
@@ -101,7 +101,7 @@ var newPhrase = phraseB.slice(5, 7);
 // Write some code that capitalizes a portion of a given string.
 // For example: "I'm very happy" becomes, "I'm VERY happy!"
 
-var Q5 = "My home town." ;
+// var Q5 = "My home town." ;
 // console.log(Q5.replace('home','HOME'))
 
 
@@ -137,7 +137,6 @@ color.splice(2,0,'blue')
 
 //Problem 1
 // Using Math.random(), console.log 3 random numbers from 5 to 15
-
 var number = [5,6,7,8,9,10,11,12,13,14,15] 
 
 function prob1() {
@@ -152,13 +151,13 @@ function prob1() {
 // Problem 2
 // Define a variable name and assign your name to it
 // Create a function that returns your name
-
 var name = ['Ramsey'] 
 
 function n (str){
     return str
 }
 console.log(n(name))
+
 
 // Problem 3
 // Create a function that accepts 2 arguments, both of which are numbers, and returns the sum of those two numbers
@@ -169,11 +168,11 @@ function add(parameter1, parameter2){
 }
 console.log(add(num2,num2))
 
+
 // Problem 4
 // Create a function that returns the type of any argument that is being called in the function
 // example// type(400) // => 'number'
 // type('hi') // => 'string'
-
 function anyData(num){
     
     var output = typeof num;
@@ -185,11 +184,8 @@ console.log(anyData(['object']))
 
 // Problem 5
 // Hint: Ensure you are modifying the parameter and not the original variable inside the function, this will make your life easier with this question
-
 // var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
 // Using the array above, create a funciton that returns the 4th element in the array.
-
-
 var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
 
 function fiveOne(array51){
@@ -197,6 +193,7 @@ function fiveOne(array51){
 
 }
 console.log(fiveOne(fruits))
+
 
 // Create a function that returns only the last element in the fruits array
 // var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
@@ -207,6 +204,7 @@ function fiveTwo(array52){
     return array52
 }
 console.log(fiveTwo(fruits))
+
 
 // Create a function that returns [peach', 'lemon', 'plum', 'grape']
 // ar fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
@@ -219,6 +217,8 @@ function fiveThree(array53){
     return array53
 }
 console.log(fiveThree(fruits))
+
+
 // Create a function that adds another furit to the end of the array and returns the new array
 var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
 
@@ -227,25 +227,20 @@ function fiveFour(array54){
         return array54
 }
 
-//console.log(fiveFour(fruits))
+console.log(fiveFour(fruits))
+
+
 // Create a funciton that returns the string, 'apple and orange and peach and lemon and plum and grape and watermelon'
 var fruits = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon']
         function fiveFive(array55){
-            //  AL5 = array5.join( ' and ')
             return array55
         }
-       // array55.join( ' and ')
-        //console.log(fiveFive(fruits))
+    
+        console.log(fiveFive(fruits))
        
-        // var champions = ['apple', 'orange', 'peach', 'lemon', 'plum', 'grape', 'watermelon'];
-        // var champsString = champions.join(' and ')
-        //  console.log(champsString);
-
 
 // Problem 6
-
 // var names = ['Wil', 'Shamika', 'Samuel', 'Ramsey']
-
 // Using the array above, create a fucntion that returns the string, 'Hello Wil, happy Friday!'
 var names = ['Wil', 'Shamika', 'Samuel', 'Ramsey']
         function sixOne (array61){
@@ -265,11 +260,29 @@ var names = ['Wil', 'Shamika', 'Samuel', 'Ramsey']
 
 // Create a function that returns the string, 'Howdy Sam!'
 // Note: Be sure to change 'Samuel' to 'Sam'
+var names = ['Wil', 'Shamika', 'Samuel', 'Ramsey']
+        function sixTwo (array62){
+           
+            var sam =  array62[2]
+            var Q = 'Howdy ' + sam
+
+            var x = (Q.slice(0, 9))
+            
+            return x
+            
+        }
+      
+      console.log(sixTwo( names))
 
 // Problem 7
-
 // var nums = [12, 3, 50, 1, 99, 2]
-
 // Using a while loop, create a funciton that adds every number in the nums array and return the total number
 // Note: this one is very challenging and requires a little bit of research, but give it shot!
 // And remember to control - c if you log to the terminal and it is running infinitely!
+var nums = [12, 3, 50, 1, 99, 2]
+
+var sum = nums. reduce(function(a, b){
+    return a + b;
+    }, 0);
+    
+    console. log(sum); // Prints: 15.
