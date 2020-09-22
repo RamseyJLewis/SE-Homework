@@ -137,16 +137,15 @@ color.splice(2,0,'blue')
 
 //Problem 1
 // Using Math.random(), console.log 3 random numbers from 5 to 15
-var number = [5,6,7,8,9,10,11,12,13,14,15] 
+var number = [5,6,7,8,9,10,11,12,13,14,15];
 
 function prob1() {
-    var index = Math.floor(Math.random() * Math.floor(number.length))
+    var index = Math.floor(Math.random() * number.length)
    var output = number[index];
     return output;
   }
 
-  console.log(prob1())
-
+console.log(prob1());
 
 // Problem 2
 // Define a variable name and assign your name to it
@@ -266,7 +265,7 @@ var names = ['Wil', 'Shamika', 'Samuel', 'Ramsey']
             var sam =  array62[2]
             var Q = 'Howdy ' + sam
 
-            var x = (Q.slice(0, 9))
+            var x = Q.slice(0, 9) + '!';
             
             return x
             
@@ -281,9 +280,9 @@ var names = ['Wil', 'Shamika', 'Samuel', 'Ramsey']
 // And remember to control - c if you log to the terminal and it is running infinitely!
 var nums = [12, 3, 50, 1, 99, 2]
 
-var sum = nums. reduce(function(a, b){
+var sum = nums.reduce(function(a, b){
     return a + b;
-    }, 0);
+}, 0);
     
     console. log(sum); 
 
