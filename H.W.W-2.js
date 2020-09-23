@@ -10,12 +10,12 @@ var str = 'Hi!'
 
 function greeting(){
     for( var i = 0; i < 5; i++){
-        console.log('Hi!')
+        //console.log('Hi!')
     }
     return 'loop'
 }
 
-console.log(greeting())
+//console.log(greeting())
     
 
 
@@ -28,11 +28,11 @@ console.log(greeting())
 //          - Etc.. based on the max value parameter\
 function loop (){
     for (var i = 1; i < 4; i++){
-        console.log(`Loop Count ${i}`)
+        //console.log(`Loop Count ${i}`)
     } 
 }
 
-console.log(loop())
+//console.log(loop())
 
 // Q3: Loop over the following array and console.log the current index value
 //      - ['Zeus', 'Hades', 'Hermies', 'Poseidon']
@@ -50,7 +50,7 @@ function godsList(){
     return 'allGodsLogged'
 }
 
-console.log(godsList())
+////console.log(godsList())
 
 // Q4: Loop over an array of strings and return a new array of single letter strings
     // Input:    ['As', 'Soon', 'As' 'Possible']
@@ -72,7 +72,7 @@ function sentInput(){
     }
     return outPut
 }      
-console.log(sentInput())
+//console.log(sentInput())
 
 // Q5: Loop over an array and log to the CLI an array where each word has its second letter capitalized
     // - Input:    ['Apple', 'Banana', 'Orange', 'Peach', 'Strawberry', 'Plum'];
@@ -88,7 +88,7 @@ function fruitCap(){
     }
 }
 fruitCap()
-     console.log(fruits)
+     //console.log(fruits)
     
     // Q6: Loop over an array of names and log the first and last initial of each person
     // - Input:    ['Shamika Earle', 'Ramsey Lewis', 'Samuel Pierre Louis', 'Wilson Pierre Louis' ]
@@ -100,20 +100,95 @@ fruitCap()
     var nameLst = ['Shamika Earle', 'Ramsey Lewis', 'Samuel Pierre Louis', 'Wilson Pierre Louis' ]
 function lstInitial(arr){
     var outPut = [];
+  
+  
     for(var i = 0; i < arr.length; i++){      
         var nameSplt = arr[i].split(' ');//['Samuel] [Pierre] [Louis']
         var initials =  nameSplt[0][0]; // accumulater, staring with first initals 'S'
+                                                // nameSplt[0][0]= ['samuel] [S]
     
    
     for( var j = 1; j < nameSplt.length; j++){
         var currentName = nameSplt[j]; // Pierre
         var initial = currentName [0]; // 'P'
-         initials = initials + initial //'S' + 'P'
+         initials = initials + initial; //'S' + 'P'
 
             }
             outPut.push(initials);
     }
-    return outPut 
+
+    return outPut;
+
 }
 
-console.log(lstInitial(nameLst))
+//console.log(lstInitial(nameLst));
+
+//////////////////////////////////////9.22.20///////////////////////////////////////////////////////////////////
+
+// level 0
+    // Declare an object called person. 
+    // Give the person several properties, including full name, height, and more
+    // You'll be using this object for the remaining questions.
+    var Ramiel  = {
+        fullName: 'Ramiel, Bravery',
+        eyeColor: 'brown', 
+        height : 6,
+        weight: 175,
+        shirt: 'Xl',
+        pantWaist:30,
+        pantInseam:33,
+    }
+
+    // Q0.1
+        // Add an email key value pair to the object called person
+    Ramiel ['email'] = 'Ramiel.Bravey@gmail.com'
+    console.log(Ramiel)
+ 
+// level 1
+    // Q 1.1    
+        // Write some code that extracts the end of the email address
+        // Log that to the console 
+        Ramiel.length = 5;
+    console.log(Ramiel.email.slice(13, 23));
+       
+   
+
+// level 2
+    // Q 2.1
+        // write a conditional statement which checks if the person is 5'11", shorter, or taller.
+        var davidBeck = 511
+        var height = 512 // If the person is the same log, "Same height as Beckham" 
+        // If the person is taller log, "Taller than Beckham"
+        // If the person is shorter log, "Shorter than Beckham"
+            // hint there are 12 inches in a foot, you may want to convert the height into only inches
+            if ( height === davidBeck){
+                console.log("Same height as Beckham" )
+            } else if ( height > davidBeck){
+                console.log("Taller than Beckham")}
+             else if (height < davidBeck){
+                console.log("Shorter than Beckham")
+             }
+
+
+           
+    // Q 2.2
+        // Create a function which takes in an object 
+        // If the object doesn't have a specific key return 'No such value'.
+        // If it does, return that key's value. 
+        
+
+// level 3
+    // Q 3.1
+        // Using the full name property, get the person's initials.
+     
+        // Create a new key called initials.
+        // Set the value of this key to the person's initials.
+            // Hint if you're getting stuck refer to last nights assignment in "SEInstructorNotes\Assignments\Day7Loops.js"
+            Ramiel.length = 5;
+            var firstInitial = (Ramiel.fullName.slice(0, 1));
+            var lastInitial = (Ramiel.fullName.slice(8, 9));
+            var initials = firstInitial + [','] + lastInitial
+            console.log(initials)
+    
+            Ramiel['Initials'] = initials
+            console.log(Ramiel)
