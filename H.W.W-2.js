@@ -88,7 +88,7 @@ function fruitCap(){
     }
 }
 fruitCap()
-    // console.log(fruits)
+     console.log(fruits)
     
     // Q6: Loop over an array of names and log the first and last initial of each person
     // - Input:    ['Shamika Earle', 'Ramsey Lewis', 'Samuel Pierre Louis', 'Wilson Pierre Louis' ]
@@ -101,20 +101,14 @@ fruitCap()
 function lstInitial(arr){
     var outPut = [];
     for(var i = 0; i < arr.length; i++){      
-        var nameSplt = arr[i].split(' ');
-        var initials = ' ';
-        var spltName = nameSplt[0];
-        var middle = spltName[0]
-
-        console.log(spltName);
-        console.log(nameSplt);
-         console.log(middle)
-         var middle = initials
-
-    for( var j = 0; j < nameSplt.length; j++){
-        var currentName = nameSplt[j];
-        var initial = currentName [0];
-         initials = initials + initial
+        var nameSplt = arr[i].split(' ');//['Samuel] [Pierre] [Louis']
+        var initials =  nameSplt[0][0]; // accumulater, staring with first initals 'S'
+    
+   
+    for( var j = 1; j < nameSplt.length; j++){
+        var currentName = nameSplt[j]; // Pierre
+        var initial = currentName [0]; // 'P'
+         initials = initials + initial //'S' + 'P'
 
             }
             outPut.push(initials);
