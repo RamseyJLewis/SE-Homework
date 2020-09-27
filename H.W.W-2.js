@@ -251,21 +251,23 @@
                     //SET inches to the NUMBER OF str SPERTAED AT ' AT INDEX OF 1 SLICED AT 0 THROUGH -1
                     person.heightInInches = inches + (feet*12);
                     //OBJCET person with VALUE height InInches IS EQUVIVILANT TO inches STRING PLUS STRING feet TIMES 12
-                    console.log(person.heightInInches)
+                    // console.log(person.heightInInches)
                 }
     
                 heightConverter(person.height);
-                console.log(person.heightInInches);
+                // console.log(person.heightInInches);
                       
-                if ( height === davidBeck){
-                          console.log("Same height as Beckham" )
-                    //IF THE height IS STRICKLY EQUAL TO davidBeck SEND TO CONSOLE LOG
-                      } else if ( height > davidBeck){
-                          console.log("Shorter than Beckham")}
-                    //IF THAT DOSE'NT APPLY AND height IS LESS THAN davidBECK SEND 'Shorter than Beckham' to log
-                       else if (height < davidBeck){
-                          console.log("Taller than Beckham")
-                       }
+                // if ( height === davidBeck){
+                //         //   console.log("Same height as Beckham" )
+                //     //IF THE height IS STRICKLY EQUAL TO davidBeck SEND TO CONSOLE LOG
+                //        else if ( height > davidBeck){
+                //         //   console.log("Shorter than Beckham")}
+                //     //IF THAT DOSE'NT APPLY AND height IS LESS THAN davidBECK SEND 'Shorter than Beckham' to log
+                //     //    else if (height < davidBeck){
+                //         //   console.log("Taller than Beckham")
+                //          }
+                //        }
+                //     }
                        //IF NEITHER PPLY AND height IS GREATER THAN davidBECK SEND 'Taller than Beckham' to log
           
                      
@@ -283,9 +285,9 @@
           
           
                }
-              console.log(hasValue(Ramiel, 'height'))
-              console.log(hasValue(Ramiel, 'height'))       
-               console.log(initialCreator(person));
+            //   console.log(hasValue(Ramiel, 'height'))
+            //   console.log(hasValue(Ramiel, 'height'))       
+            //    console.log(initialCreator(person));
               //LOG initialCreator AND INVOKE IT WITH THE OBJECT person 
           
           // level 3
@@ -309,14 +311,94 @@
                         return initials2;
                         //return initials2 to the function
                     }
-                    console.log(initial(person));
+                    // console.log(initial(person));
                     //INVOKE initlas WITH person AND SEND IT TO THE CONSOLE
             // Higher order functions
         // .filter()
         // .reduce()      
         // .map()
   
+ ///////////////////////////// PART 3:
+
+
+ ///////  Counting sheep.../////////////////////////////////////////////////////////////////
+
+
+//  Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+var array1 = [true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true ];
     
+
+function countSheeps(arrayOfSheep) {
+    for( i = 0; i  <  arrayOfSheep.length; i++){
+        let stringSheep = arrayOfSheep
+       
+        if (stringSheep == 'true'){
+            return +1
+        }
+      
+     }
+       
+  
+}
+    console.log(countSheeps(array1))
+ 
+
+
+  /////// Grasshopper - Summation ///////////////////////////////////////////////////////
+
+//  Write a program that finds the summation of every number from 1 to num. 
+//  The number will always be a positive integer greater than 0.
+
+var summation = function (num) {
+    for (i = 0; i < num.length; i++) {
+        
+        //return addArr = addArr + num[i];
+        return addArr += num[i];
+    }
+
+  }
+
+  //console.log(summation(8), 36)
+
+   ///////Square(n) Sum///////////////////////////////////////////////////////
+
+   //Complete the square sum function so that it squares each number passed into it 
+   //and then sums the results together.
+   //For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+   
+   function squareSum(numbers){
+
+}
+
+   ///////Basic Mathematical Operations///////////////////////////////////////////////////////
+
+//    Your task is to create a function that does four basic mathematical operations.
+
+// The function should take three arguments - operation(string/char), value1(number), value2(number).
+// The function should return result of numbers after applying the chosen operation.
+// Examples
+// basicOp('+', 4, 7)         // Output: 11
+// basicOp('-', 15, 18)       // Output: -3
+// basicOp('*', 5, 5)         // Output: 25
+// basicOp('/', 49, 7)        // Output: 7
+
+function basicOp(operation, value1, value2)
+{
+  if (operation == '+') return value1 + value2;
+  if (operation == '-') return value1 - value2;
+  if (operation == '*') return value1 * value2;
+  if (operation == '/') return value1 / value2;
+
+}
+
+//console.log(basicOp('+', 4, 7));
+
 ///////////////////////////// PART 4:
 // filter questions
 
@@ -324,29 +406,30 @@
     // given an array of numbers filter out any that are larger than 10
     lv10Numbers = ['2', '4' ,'12' ,'28' ]
     lv0Answer = lv10Numbers.filter(function(zero){ return zero < 10})
-   console.log(lv0Answer)
+//    console.log(lv0Answer)
 
 // Level 1
     // given an array of numbers filter out any that are divisible by 3
     lv12Numbers = ['2', '4' ,'12' ,'28', '6' ]
     lv12Answers =lv12Numbers.filter(function(one){return one %3 !== 0 })
-     console.log(lv12Answers)
+    //  console.log(lv12Answers)
     // given an array of nubers filter out any that are even
     lv13Numbers = ['2','3','4','5','6']
     lv13Answers =lv13Numbers.filter(function(two){return two %2  === 1 })
-     console.log(lv13Answers)
+    //  console.log(lv13Answers)
 // Level 2
     // given an array of strings, filter out any that are longer than 4 chars
     let fruit = ['mango','kiwi', 'apple']
     longFruit = fruit.filter(function(n){
         return n.length < 5
     })
-    console.log(longFruit)
+    // console.log(longFruit)
 
     // given an array of arrays, filter out any that are shorter than 10 elements
     let plants = [['tree'],['bush','grass'],[1,2,3,4,5,6,7,8,9,10,11]]
     longPlants = plants.filter(function(n){ return n.length >= 10})
-    console.log(longPlants)
+    // console.log(longPlants)
+
 
 // Level 3
     // given an array of objects, filter out any that dont have a key called 'firstName'
@@ -379,4 +462,4 @@
     // given an array of strings, return a new array with all strings as capitals
 
 
-          
+    
