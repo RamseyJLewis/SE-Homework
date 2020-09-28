@@ -435,28 +435,53 @@ function basicOp(operation, value1, value2)
     // console.log(longPlants)
 
 
+
+var winterGames = {
+    firstName: 'Sean',
+    lastName: 'White',
+    event:'snowBoarding',
+    medals: 'gold'
+}
 // Level 3
     // given an array of objects, filter out any that dont have a key called 'firstName'
-
+    console.log(winterGames.firstName)
 // reduce questions 
-// level 0:
-    // given an array of numbers add them all together
 
+// level 0:
+
+    // given an array of numbers add them all together
+    // let arr = [1,2,3,4,5,6,7,8,].reduce(function(accumulator, currentNum){return accumulator + currentNum});
+    // console.log(arr)
 // level 1:
     // given an array of numbers, multiply them all together
-
+    let arr = [1,2,3,4,5,6,7,8,]
+    let lvl2 = arr.reduce((a, b)=> a*b, 1)
+    console.log(lvl2)
 // level 2:
     // given an array of strings, concatiante them together 
-
+    const Caps = ['A', 'B', 'C'];
+    const number = ['8', '20', '4'];
+    const question2 = Caps.concat(number);
+    
+    console.log(question2);
 // level 3: 
     // given an array of arrays make them all into one array 
+let yard = [['tree'], ['bush'], ['flower']];
+var merged = [].concat.apply([], yard);
+console.log(merged)
+
 
 // level 5:
     // given an array of strings, remove any vowels and concatenate them toegher 
 
 
 // map questions
-// level 0:
+// level 0: 
+map0 = [ 8, 9, 27, 10]
+function multiply (map0) 
+{ var sum=1; for (var i=0; i<map0.length; i++)
+     { sum = 2 * map0[i]; } return sum; } 
+     console. log(map0);
     // given an array of numbers, return a new array with all numbers multiplied by 2
 
 // level 1:
