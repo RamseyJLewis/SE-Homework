@@ -335,18 +335,22 @@ var array1 = [true,  true,  true,  false,
     
 
 function countSheeps(arrayOfSheep) {
-    for( i = 0; i  <  arrayOfSheep.length; i++){
-        let stringSheep = arrayOfSheep
-       
-        if (stringSheep == 'true'){
-            return +1
-        }
-      
-     }
-       
-  
+   
+    let count = 0
+   
+        for( i = 0; i  <  arrayOfSheep.length; i++){
+
+         let stringOfSheep = arrayOfSheep[i]  
+        
+            if(stringOfSheep == true ){
+
+                 count++
+            } 
+        }    
+    return count 
 }
-    console.log(countSheeps(array1))
+   
+console.log(countSheeps(array1))
  
 
 
@@ -356,15 +360,15 @@ function countSheeps(arrayOfSheep) {
 //  The number will always be a positive integer greater than 0.
 
 var summation = function (num) {
+    let addArr = 8
     for (i = 0; i < num.length; i++) {
         
-        //return addArr = addArr + num[i];
-        return addArr += num[i];
+       addArr + num[i];
     }
-
+    return addArr
   }
 
-  //console.log(summation(8), 36)
+  console.log(summation(8), 36)
 
    ///////Square(n) Sum///////////////////////////////////////////////////////
 
