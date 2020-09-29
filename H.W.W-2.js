@@ -377,8 +377,13 @@ var summation = function (num) {
    //For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
    
    function squareSum(numbers){
+       let sym = 0
+       for ( i= 0; i < number.length; i++){
+       sum += numbers[i] * numbers[i];
 
-}
+        }
+        return sum;
+   }
 
    ///////Basic Mathematical Operations///////////////////////////////////////////////////////
 
@@ -455,7 +460,7 @@ var winterGames = {
 // level 1:
     // given an array of numbers, multiply them all together
     let arr = [1,2,3,4,5,6,7,8,]
-    let lvl2 = arr.reduce((a, b)=> a*b, 1)
+    let lvl2 = arr.reduce((a, b)=> a*b)
     console.log(lvl2)
 // level 2:
     // given an array of strings, concatiante them together 
@@ -473,22 +478,26 @@ console.log(merged)
 
 // level 5:
     // given an array of strings, remove any vowels and concatenate them toegher 
-
-
+    let arrayOfstr = ['is','this', 'a','test']
+let lvl5 = arrayOfstr.reduce((a ,b) =>  a + b.replace(/[aeiou/]+/g,''),'' )
+console.log(lvl5)
 // map questions
 // level 0: 
-map0 = [ 8, 9, 27, 10]
-function multiply (map0) 
-{ var sum=1; for (var i=0; i<map0.length; i++)
-     { sum = 2 * map0[i]; } return sum; } 
-     console. log(map0);
-    // given an array of numbers, return a new array with all numbers multiplied by 2
-
+let arrOfNums = [ 8, 9, 27, 10]
+let level0 = arrOfNums.map(num => num * 2)
+console.log(level0)
+    //given an array of numbers, return a new array with all numbers multiplied by 2
+ 
 // level 1:
     // given an array of numbers, return a new array with all numbers increased by 1
-
+    let arrOfNums02 = [ 8, 9, 27, 10]
+    let level02 = arrOfNums02.map(num => num + 1)
+    console.log(level02)
 // level 2:
     // given an array of strings, return a new array with all strings as capitals
+    let arrayOfstrr = ['is','this', 'a','test']
+let level2 = arrayOfstrr.map(str => str.toUpperCase());
+console.log(level2)
 
 
     
