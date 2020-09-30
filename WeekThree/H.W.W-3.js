@@ -9,18 +9,15 @@
 // 4) n =  12, x = 7, y = 5 => false because  12 is neither divisible by 7 nor 5
 
 function isDivisible(n, x, y) {
-    if (n %x){
-       return (Boolean(false));
-    }
-    else if(n %y){
-       return (Boolean(false));
-
-    }
-    else {
-       return (Boolean(true));
+    if (n %x == 0 && n % y == 0){
+       
+        return true;
+  
+    } else {
+        return false
     }
 }
-console.log(isDivisible(3,1,3))
+console.log(isDivisible(2,1,3))
 
 
 
