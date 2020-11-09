@@ -28,7 +28,7 @@
 
 // DON’T try and wing this, take a look at todays notes, collaborate with classmates, use the internet to help yourself land on the correct solution, and use office hours to get the solution.
 
- var repeat = "MAN54681;Manchester Piccadilly"
+ var repeat = "MAN54681;Manchester Piccadillyy"
 //  console.log(repeat.replace(';',', City: '));
 // var repeat = "GNF6519871681;Greenfield"
 // console.log(repeat.replace(';',', City: '));
